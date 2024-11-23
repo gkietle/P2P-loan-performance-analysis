@@ -41,7 +41,7 @@ The company requires robust data management to monitor lending activities, evalu
 
 This project aims to build an end-to-end data pipeline that processes, stores, and visualizes by leveraging the power of data from the Lending Club platform and Azure Cloud services. The data includes information such as loan amount, interest rate, loan duration, and loan status. The project will use Azure Data Factory (ADF) to ingest the data, transform it using Databricks & Spark, load it into Azure SQL Database, and generate interactive & insightful dashboards using PowerBI.
 
-
+<a name="dataset"></a>
 ### 💾 Dataset
 
 - **Data Type**: Loan data from the largest P2P lending platform (Lending Club) spanning from 2007 to Q3 2020.
@@ -50,12 +50,14 @@ This project aims to build an end-to-end data pipeline that processes, stores, a
 - **Source**: The dataset is sourced from Kaggle and can be accessed at [Kaggle Lending Club Dataset](https://www.kaggle.com/datasets/ethon0426/lending-club-20072020q1).
     > **Preview (500 records)**: [Lending Club Dataset Preview](./dataset/Loan_status_2007-2020Q3_sample_500.xlsx)
 
+<a name="project-goals"></a>
 ### 🎯 Project Goals
 - Analyze loan performance using the Lending Club platform data.
 - Ingest, transform, and load the data into Azure SQL Database using Azure Data Factory (ADF).
 - Apply data cleaning and transformation using Azure Databricks with Spark.
 - Create interactive data visualizations and reports with Microsoft Power BI.
 
+<a name="technologies"></a>
 ### ⚙️ Technologies
 - **Data sources**: Azure Blob Storage
 - **Data pipeline**: Azure Data Factory
@@ -64,8 +66,8 @@ This project aims to build an end-to-end data pipeline that processes, stores, a
 - **Data processing**: Azure Databricks
 - **Data transformation**: Spark, Python, SQL, Jupyter Notebook
 
+<a name="key-insights"></a>
 ## 📈 Key Insights
-
 - 💸 **Overall Revenue & Loan Performances**
   - Number of loans and borrowers: **1.74 million loans** and **1.77 million borrowers** with about **1 million** Good loans & **~350k** bad loans. with total funed loans of **~25.97 billion.**
   - **~57,38%** of the loans being used for debt consolidation and **~22,48%** for credit card purposes.
@@ -85,10 +87,12 @@ This project aims to build an end-to-end data pipeline that processes, stores, a
 - 🔢 Details statistics
     - Futher details statistics can be found in the [PowerBI-snapshot](./dashboard-snapshot.pdf) file.
 
+<a name="project-architecture"></a>
 ## 🚀 Project Architecture
 You can find the detailed information on the diagram below:
 ![Architecture](./assets/Architecture.png)
 
+<a name="data-ingestion"></a>
 ### 🧱 Data Ingestion
 
 The data will be ingested into Azure Data Factory (ADF) using the Azure Data Factory Copy Activity. The Copy Activity will read data from the on-premise file system and write it to an Azure Blob Storage container. The data will be ingested into a staging table for further analysis.
@@ -97,6 +101,7 @@ The data will be ingested into Azure Data Factory (ADF) using the Azure Data Fac
   <img src="./assets/ingestion.png" alt="Data Ingestion" width="600">
 </p>
 
+<a name="data-transformation--loading"></a>
 ### 🛠️ Data Transformation & Loading
 
 The data will be transformed using Azure Databricks (ADB) using the Azure Databricks, read data from the Blob Storage container and write it to an Azure SQL Database. Performing the two stages of data transformation with Azure Databrick & Azure Mapping Data Flow for loading will help to reduce the time taken to load the data into the SQL Database.
@@ -106,8 +111,6 @@ The data will be transformed using Azure Databricks (ADB) using the Azure Databr
   <img src="./assets/transformation.png" alt="Data Transformation" width="600">
 </p>
 
-
-
 Using Azure Mapping Data Flow for loading the data into Azure SQL Database follow the Star Schema mapping.
 
 <p align="center">
@@ -116,6 +119,7 @@ Using Azure Mapping Data Flow for loading the data into Azure SQL Database follo
   <img src="./assets/star_schema.png" alt="Data Transformation" width="500">
 </p>
 
+<a name="data-reporting"></a>
 ### 📊 Data Reporting
 The data will be visualized using PowerBI. The PowerBI report will include visualizations such as bar charts, line charts and other charts to analyze loan performance. We provide the following features in the PowerBI report:
   - Deployed PowerBI report from Desktop to PowerBI Service, support for sharing and collaboration.
@@ -124,7 +128,7 @@ The data will be visualized using PowerBI. The PowerBI report will include visua
   - Building Responsive dashboards with PowerBI for both desktop and mobile devices, providing a seamless user experience.
   - The report will also include drill-down, navigation, and filtering capabilities to allow users to explore the data in more detail.
 
-<p align="center">
+<p align="center" width="100%">
   <img src="./assets/pbiservice.png" alt="Data Transformation" width="500">
   <img src="./assets/rls.png" alt="Data Transformation" width="400">
   <img src="./assets/responsive.png" alt="Data Transformation" width="400">
@@ -148,6 +152,7 @@ The data will be visualized using PowerBI. The PowerBI report will include visua
 ├── Report.pdf // Detailed documentation
 ```
 
+<a name="usage---demonstration"></a>
 ## 📽️ Usage - Demostration
 To run the project, follow these demo video resources for futher usage & understanding:
 
@@ -155,9 +160,10 @@ To run the project, follow these demo video resources for futher usage & underst
 2. [ETL Pipeline optimization](https://www.youtube.com/watch?v=WH2hiA0Mhr4)
 3. [Data visualization with PowerBI](https://www.youtube.com/watch?v=zJjLjgF72JU)
 
-
+<a name="contributing"></a>
 ## Contributing
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
+<a name="acknowledgments"></a>
 ## Acknowledgments
 We would like to thank our instructor and the University of Information Technology for providing the resources and support for this class project.
