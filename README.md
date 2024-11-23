@@ -15,15 +15,19 @@
 
 ## 📝 Table of Contents
 1. [Introduction](#introduction)
-2. [Project Overview](#overview)
+2. [Project Overview](#project-overview)
+  2.1. [Dataset](#dataset)
+  2.2. [Project Goals](#project-goals)
+  2.3. [Technologies](#technologies)
 3. [Key Insights](#key-insights)
-4. [Project Architecture](#project-architecture)  
-  4.1. [Data Ingestion](#data-ingestion)  
-  4.2. [Data Transformation](#data-transformation)  
-  4.3. [Data Loading](#data-loading)  
-  4.4. [Data Reporting](#data-reporting)
-5. [Credits](#credits)
-6. [Contact](#contact)
+4. [Project Architecture](#project-architecture)
+  4.1. [Data Ingestion](#data-ingestion)
+  4.2. [Data Transformation & Loading](#data-transformation--loading)
+  4.3. [Data Reporting](#data-reporting)
+5. [Project structure](#project-structure)
+6. [Usage - Demostration](#usage---demonstration)
+7. [Contributing](#contributing)
+8. [Acknowledgments](#acknowledgments)
 
 ## 🔎 Introduction
 
