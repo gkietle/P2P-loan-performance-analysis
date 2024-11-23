@@ -29,12 +29,14 @@
 7. [Contributing](#contributing)
 8. [Acknowledgments](#acknowledgments)
 
+<a name="introduction"></a>
 ## 🔎 Introduction
 
 Lending Club is one of the largest peer-to-peer (P2P) lending platforms in the United States, established in 2007. It connects borrowers directly with individual or institutional investors, facilitating a flexible and convenient online lending system. The platform operates by allowing borrowers to register, provide personal and financial information, and undergo a credit risk assessment. Once approved, loans are offered to investors, who can choose to fund all or part of the loan, creating diverse investment opportunities. Lending Club manages the loan repayment process and implements risk management strategies to ensure transparency and compliance with financial regulations.
 
 The company requires robust data management to monitor lending activities, evaluate loan performance, and analyze trends. The goal of this project is to process, store, and visualize data to provide actionable insights that enhance decision-making and improve operational efficiency, ultimately fostering a stable and sustainable business environment.
 
+<a name="project-overview"></a>
 ## 📊 Project Overview
 
 This project aims to build an end-to-end data pipeline that processes, stores, and visualizes by leveraging the power of data from the Lending Club platform and Azure Cloud services. The data includes information such as loan amount, interest rate, loan duration, and loan status. The project will use Azure Data Factory (ADF) to ingest the data, transform it using Databricks & Spark, load it into Azure SQL Database, and generate interactive & insightful dashboards using PowerBI.
@@ -129,6 +131,7 @@ The data will be visualized using PowerBI. The PowerBI report will include visua
   <img src="./assets/pbi.png" alt="Data Transformation" width="400">
 </p>
 
+<a name="project-structure"></a>
 ## 🛜 Project structure
 
 ```
